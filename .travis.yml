@@ -5,7 +5,8 @@ addons:
       - postgresql-client-11
   postgresql: "11"
 before_install: 
-  - sudo pg_upgradecluster -v
+  - sudo stop postgresql@9.2-main.service
+  - sudo start postgresql@11-main.service
 env: 
   global: 
     - PGPORT=5433
