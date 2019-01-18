@@ -7,9 +7,7 @@ addons:
     - postgresql-11
     - postgresql-client-11
 
-env:
-  global:
-  - PGPORT=5433
+
 
 
 
