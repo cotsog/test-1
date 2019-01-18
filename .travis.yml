@@ -1,9 +1,7 @@
 
-services:
-  - postgresql
 
 addons:
-  postgresql: 11
+  postgresql: '11'
   apt:
     packages:
     - postgresql-11
@@ -11,7 +9,7 @@ addons:
 
 env:
   global:
-  - PGPORT=5432
+  - PGPORT=5433
 
 
 
