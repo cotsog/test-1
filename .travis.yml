@@ -1,13 +1,11 @@
-before_install:
-	- pg_upgradecluster -v
-
 addons: 
   apt: 
     packages: 
       - postgresql-11
       - postgresql-client-11
   postgresql: "11"
-
+before_install: 
+  - "pg_upgradecluster -v"
 env: 
   global: 
     - PGPORT=5433
